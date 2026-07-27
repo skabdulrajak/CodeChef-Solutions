@@ -1,10 +1,10 @@
 # cook your dish here
 n=int (input())
 arr=list (map(int,input().split()))
-s=arr
-for i in range (len(arr)):
+count=1
+for i in range (1,n):
   
-    if arr[i]==arr[i+1]:
-        s.remove(arr[i])
-        
-print (len(s))
+    if arr[i]!=arr[i-1]:
+        count+=1
+print (count)
+         
