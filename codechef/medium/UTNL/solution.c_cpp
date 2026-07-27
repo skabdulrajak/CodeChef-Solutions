@@ -3,5 +3,13 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
+	int n,m;
+     cin>>n>>m;
+     if (m>n){
+         cout<<"UNLOCKED";
+         
+     }
+     else{
+         cout<<n-m;
+     }
 }
