@@ -1,13 +1,19 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <stdio.h>
 
 int main() {
 	// your code goes here
-int x;
-double y;
-cin >> x >> y;
- if (x % 5 == 0 && x + 0.50 <= y) {
-        y -= (x + 0.50);
-    }
- cout << fixed << setprecision(2) << y << endl;
+	int x;
+	double y;
+	scanf ("%d %lf",&x,&y);
+	if (x%5 ==0 &&  x+0.5 <= y)
+	{
+	    printf("%.2f",y-(x+0.5));
+	}
+	else
+	{
+	    printf("%.2f",y);
+	}
+	   
+
 }
+
