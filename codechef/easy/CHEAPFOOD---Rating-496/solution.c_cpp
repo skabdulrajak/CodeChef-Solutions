@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+int t;
+cin>>t;
+while (t--)
+{
+    int x;
+    cin>>x;
+    int d1=x*0.1;
+    if (d1>100)
+    {
+        cout<<d1<<endl;
+    }
+    else
+    {
+        cout<<"100"<<endl;
+    }
+    
+}
+}
