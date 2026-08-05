@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+int t;
+cin>>t;
+int x,y,z;
+while (t--)
+{
+    cin>>x>>y>>z;
+    int days_time=z*24*60;
+    int work_time = x*y;
+    if (days_time >=work_time)
+    {
+        cout<<"YES"<<endl;
+    }
+    else{
+        cout<<"NO"<<endl;
+    }
+}
+}
