@@ -5,6 +5,11 @@ int main() {
 	// your code goes here
 int n;
 cin>>n;
-
-
+int present_time=n*30;
+int rem_time;
+if (present_time <600)
+{
+    rem_time=600-present_time;
+}
+cout<<rem_time/30;
 }
