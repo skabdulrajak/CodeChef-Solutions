@@ -9,8 +9,10 @@ int main() {
 	{
 	    int p,q;
 	    cin>>p>>q;
-	    
-	    if (p>=q)
+	    if (p+q <=1 )
+	    {cout<<"ALICE"<<endl;
+	    }
+	    else if  (p>=q)
 	    {
 	        cout<<"ALICE"<<endl;
 	    }
