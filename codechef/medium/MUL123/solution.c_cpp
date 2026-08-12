@@ -2,18 +2,31 @@
 using namespace std;
 
 int main() {
-	// your code goes here
-	int t;
-	cin>>t;
-	while (t--)
-	{
-	    int n;
-	    cin>>n;
-	    while (n%3==0 && n%5==0)
-	    {   cout<<n<<endl;
-	        n++;
-	        
-	    }
-	}
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
 
+        int ops1 = 0;
+        int temp1 = n;
+        while (temp1 % 3 != 0) {
+            temp1++;
+            ops1++;
+        }
+
+        int ops2 = 1;
+        int temp2 = n;
+        int rem = temp2 % 5;
+        if (rem == 0) temp2 += 5;
+        else temp2 += (5 - rem);
+
+        while (temp2 % 3 != 0) {
+            temp2++;
+            ops2++;
+        }
+
+        cout << min(ops1, ops2) << endl;
+    }
+    return 0;
 }
