@@ -3,5 +3,17 @@ using namespace std;
 
 int main() {
 	// your code goes here
+	int t;
+	cin>>t;
+	while (t--)
+{
+    int n,m,x;
+    cin>>n>>m>>x;
+     int row = (x + m - 1) / m;
+     int fromFront = row;
+     int Back=n-row+1;
+     cout << min(fromFront, Back) << endl;
+    }
+
 
 }
