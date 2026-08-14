@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    int A, B, X, Y;
+    cin >> A >> B >> X >> Y;
+
+    if (A == B) {
+        cout << "YES" << endl;
+        return;
+    } else if (B > A) {
+        int needed = B - A;
+        if (X >= needed) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
+        }
+    } else { // B < A
+        int needed = A - B;
+        if (Y >= needed) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
+        }
+    }
+}
+
+int main() {
+    int T;
+    cin >> T;
+    while (T--) {
+        solve();
+    }
+    return 0;
+}
